@@ -1,4 +1,4 @@
-import search_model as SearchModel
+import elasticsearch_model.search_model as SearchModel
 from flask import Flask, render_template, request
 
 app = Flask(__name__)

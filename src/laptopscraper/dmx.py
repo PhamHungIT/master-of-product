@@ -27,7 +27,7 @@ for i in links:
     product_links.append(link)
 
 csv_columns = ['Product','Price','Brand','Core','RAM','ScrSize','GraphicCard','Drive_Type','Capacity','OperSystem','Weight','Madein', 'Since','Shop','URL']
-with open('data/raw/dmx.csv', "a", encoding="utf8") as f:
+with open('laptopscraper/data/raw/dmx1.csv', "w", encoding="utf8") as f:
     writer = csv.DictWriter(f, fieldnames=csv_columns)
     writer.writeheader()
 
@@ -136,9 +136,10 @@ for link in product_links:
                 "Shop": 'Dienmayxanh',
                 "URL":link,
                 } 
-        with open('data/raw/dmx.csv', "a", encoding="utf8") as f:
+        with open('laptopscraper/data/raw/dmx1.csv', "a", encoding="utf8") as f:
             writer = csv.DictWriter(f, fieldnames=csv_columns)
             writer.writerow(data)
+            print(data)
     except:
         pass
 

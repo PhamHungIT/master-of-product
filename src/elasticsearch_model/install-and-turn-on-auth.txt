@@ -1,0 +1,25 @@
+# Install
+sudo apt install elasticsearch
+
+# Enable
+sudo systemctl enable elasticsearch
+
+# Start
+sudo systemctl start elasticsearch
+
+# Stop the ElasticSearch service
+systemctl stop elasticsearch
+
+# Edit the ElasticSearch configuration file named: elasticsearch.yml
+nano /etc/elasticsearch/elasticsearch.yml
+
+# Add the following lines at the end of the file
+xpack.security.enabled: true
+
+# Start the ElasticSearch service
+systemctl start elasticsearch
+
+# Set the password for the ElasticSearch internal accounts
+/usr/share/elasticsearch/bin/elasticsearch-setup-passwords interactive
+
+Initiating the setup of passwords for reserved users elastic,apm_system,kibana,kibana_system,logstash_system,beats_system,remote_monitoring_user.

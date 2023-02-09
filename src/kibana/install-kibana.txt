@@ -1,0 +1,7 @@
+sudo apt install kibana
+
+sudo systemctl daemon-reload
+
+sudo systemctl enable kibana
+sudo systemctl start kibana
+
