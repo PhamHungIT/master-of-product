@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Home page of the website -->
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Data Science Project"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+
+        <title>Laptop Portal</title>
+
+        <script src="{{ url_for('static', filename='scripts/d3.v5.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='scripts/project.js') }}"></script>
+    </head>
+
+    <body id="main-background">
+        <div id="content">
+            <br>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="search.html">Search</a>
+                <a href="about.html">About</a>
+                <a href="data.html">Data</a>
+                <a href="references.html">References</a>
+            </nav>
+            <header>
+                <br>
+                <div class="line"></div>
+                    <div style="display:inline-block;">
+                        <h1>About<h1>
+                    </div>
+                <div class="line"></div>
+                <h2>Welcome</h2>
+            </header> 
+
+            <p class = "text"> 
+                The goal of this website is to help customers find the perfect laptop.<br>
+                This is my project for my Data Science course at Hanoi University of Science and Technology.<br> 
+                Laptops come in a wide variety of sizes, features, and prices, which makes choosing the best laptop a challenge. That's why you need to figure out what your needs are. 
+                <br>
+                <br>
+                I hope that this website will help you find the best one.
+                <br>
+
+                <h3 class="text">Future extensions to this website could include:</h3>
+                <ul class="text">
+                    <li>Collecting dataset from more websites</li>
+                    <li>Tooltips to explain terms and components used for laptops</li>
+                    <li>Creating viusal representation of laptop market based on dataset</li>
+                    <li>Cleaning up the code</li>
+                </ul>
+            </p>
+            
+            <br>  
+        </div>
+        <footer>
+            Contact:<a href="mailto:nguyenminhmannh2001@gmail.com"> Minh Manh</a>, IT4930 Introduction to Data Science, 2022.
+        </footer>
+    </body>
+
+</html>
