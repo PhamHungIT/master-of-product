@@ -1,4 +1,4 @@
-# Master of Laptop
+# Laptop Portal
 
 _Authors: Nguyen Minh Manh, Nguyen Anh Tuan, Pham Van Hung, Nguyen Duc Lam_
 
